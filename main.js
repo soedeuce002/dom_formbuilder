@@ -122,7 +122,7 @@ let option = document.createElement("option");
     }
     formContainer.appendChild(select);
   } else {
-    let textArea = document.createElement("textarea");
+  let textArea = document.createElement("textarea");
 
     textArea.setAttribute("placeholder", formData[5].label);
     textArea.setAttribute("name", formData[5].id);
@@ -137,10 +137,44 @@ let option = document.createElement("option");
 //  if(formData[i].type === "textarea") {
 //    let textArea = document.createElement("textarea");
 //
+//    textArea.setAttribute("placeholder", formData[5].label);
+//    textArea.setAttribute("name", formData[5].id);
+//
+//    formContainer.appendChild(textArea);
+//    } else if (formData[i].type ==="select") {
+//    let select = document.createElement("select");
+//    let option = document.createElement("option");
+//      for (let x = 0; x < 5; x++) {
+//
+//      option.setAttribute("label", formData[4].options[x])
+//      select.appendChild(option);
+//
+//      formContainer.appendChild(select);
+//    }
+//  } else {
+// for (let i = 0; i < formData.length; i++) {
+//   if (formData[i].type === "text" ||
+//     formData[i].type === "email" ||
+//     formData[i].type === "tel") {
+//
+//     let input = document.createElement("input");
+//
+//     input.setAttribute("type", formData[i].type);
+//     input.setAttribute("id", formData[i].id);
+//     input.setAttribute("placeholder", formData[i].label);
 //
 //
+//     formContainer.appendChild(input);
+//
+//
+//   }
+//    }
 //
 //  }
+//
+//
+//
+//
 //
 //
 //
