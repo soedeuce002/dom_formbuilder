@@ -114,10 +114,13 @@ for (let i = 0; i < formData.length; i++) {
 
   } else if (formData[i].type === "select") {
 let select = document.createElement("select");
-let option = document.createElement("option");
-    for (let x = 0; x < 5; x++) {
 
-      option.setAttribute("label", formData[4].options[x])
+    for (let x = 0; x < 5; x++) {
+      let option = document.createElement("option");
+
+      option.setAttribute("label", formData[4].options[x].label);
+      option.setAttribute("value", formData[4].options[x].value);
+
       select.appendChild(option);
     }
     formContainer.appendChild(select);
